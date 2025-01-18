@@ -50,12 +50,19 @@ form {
     grid-column: 2 / -1;
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 250px;
 }
 
 .projects {
     grid-row: 1 / -1;
     grid-column: 1;
+    display: grid;
+    grid-template-rows: 32px auto auto auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects>p {
+    grid-column: 1 / -1;
 }
 
 .announcements {
