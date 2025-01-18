@@ -1,0 +1,51 @@
+body {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 50px 200px 100px 1fr;
+}
+
+.topnav {
+    grid-row: 1;
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+form {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.profile {
+    grid-column: span 1 / -1;
+    grid-row: 1;
+}
+
+.greeting {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.options {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.options>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+}
