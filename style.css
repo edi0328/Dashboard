@@ -66,6 +66,7 @@ form {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 250px;
     background-color: lightgrey;
+    padding: 24px;
 }
 
 .projects {
@@ -75,6 +76,7 @@ form {
     grid-template-rows: 32px auto auto auto;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
+    row-gap: 30px;
 }
 
 .projects>p {
@@ -98,4 +100,8 @@ form {
     width: max(80%, 400px);
     position: relative;
     left: 64px;
+}
+
+.projects>div {
+    background-color: white;
 }
